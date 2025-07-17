@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+<style>
+          .center {
+                    display: block;
+                    margin-left:80px;
+                    margin-right:80px;
+                    width:auto;
+                  }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url(css.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: px;
+       
+            border-radius: 10px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+    <title>College Admission Form</title>
+</head>
+<body style=background-color:pink>
+
+<p><center><h1>Registration Form</h1></center></p>
+<div class="container">
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" placeholder="Enter your desired course" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required pattern=".{8,}" title="Password must be at least 8 characters long">
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<center><img class="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8FPUpIBQliHKEtujj28Qz2hdhxF9SZUKsY3cMDZi8A&amp;s&quot; height="100" width="100"></center>
+</body>
+</html>
